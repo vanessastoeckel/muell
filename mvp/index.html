@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html>
+<title>User Experience Design 2 - DESIGN SPRINT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo:100,300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../sprint/index.html" class="w3-bar-item w3-button"><i class="fa fa-rocket"></i><b> SPRINT</b></a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> MVP</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../sprint/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN SPRINT</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">MPV</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-5 w3-display-container" id="home">
+</header>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>OBSERVATION</h3>
+      <p style="margin: 0 8vw 0 0;">Auf dem Weg vom Zapp zum Bahnhofsgebäude haben wir darauf geachtet, wie viel Müll wir unserwegs finden.<br/>Unten sind einige unserer Eindrücke zu sehen.</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="../data/moods/map.jpg" alt="Weg zum Bahnhof" width="700" height="394" style="margin-bottom: 10vh;">
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="w3-container w3-row w3-center w3-light-grey w3-padding-32">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">3,75%</span>
+      <br>Glas
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">18,75%</span>
+      <br>Papier
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">50%</span>
+      <br>Plastik
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">27,5%</span>
+      <br>Restmüll
+    </div>
+  </div>
+
+  <h3 class="w3-center" style="margin:94px 0 32px 0">MOODS</h3>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/12.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/13.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/14.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/15.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/16.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/17.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/18.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/19.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/20.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/21.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/22.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/23.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="../data/moods/24.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <h3 class="w3-center" style="padding-top: 64px;">FAZIT</h3>
+  <p  style="margin: 0 22vw 0 22vw;">
+    Obwohl Schwäbisch Gmünd eine Stadt ist, die auf den ersten Blick sauber und
+    aufgeräumt wirkt und die Strecke zwischen Zapp und Bahnhof gerade einmal 800m
+    lang ist, haben wir alle ein bis zwei Meter Müll gefunden. <br/><br/>
+    Hierbei ist uns aufgefallen, dass vor allem biologisch nicht abbaubarer Müll
+    zu finden war, wohingegen kein Biomüll gefunden wurde. <br/>
+    Außerdem ist uns aufgefallen, dass vor allem Mülleimer selbst ein Hauptsammelpunkt
+    für Müll auf dem Boden ist.
+  </p>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>STAKEHOLDER MAP</h3>
+      <p style="margin: 0 8vw 0 0;">
+
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stakeholder.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:64px" id="team">
+  <h3 class="w3-center">INTERVIEWS</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/noah.jpeg" alt="Noah" style="width:100%">
+        <div class="w3-container">
+          <h3>NOAH</h3>
+          <p class="w3-opacity" style="margin: 0;">Student</p>
+          <!-- <p style="margin: 0;">"Ich bestehe quasi aus take-away-food."</p> -->
+          <p style="margin: 0 0 2vh 0;">"Wenn kein Mülleimer in der Nähe ist werfe ich meine Zigaretten einfach auf den Boden.
+            <!-- Vor allem beim Auto fahren passiert das öfters." -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/martina.jpeg" alt="Martina" style="width:100%">
+        <div class="w3-container">
+          <h3>MARTINA</h3>
+          <p class="w3-opacity" style="margin: 0;">Erzieherin</p>
+          <p style="margin: 0 0 2vh 0;">"Unsere Kinder im Kindergarten lernen Mülltrennung dadurch, dass sie es jeden Tag anwenden."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/daniel.jpg" alt="Daniel" style="width:100%">
+        <div class="w3-container">
+          <h3>DANIEL</h3>
+          <p class="w3-opacity" style="margin: 0;">Qualitätsmanager</p>
+          <p style="margin: 0 0 2vh 0;">"Ich entsorge meinen Müll immer aber wenn ein Mülleimer überfüllt ist stelle ich meinen Müll daneben."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/person.jpg" alt="Ercan" style="width:100%">
+        <div class="w3-container">
+          <h3>ERCAN</h3>
+          <p class="w3-opacity" style="margin: 0;">Anlagenmechaniker</p>
+          <p style="margin: 0 0 2vh 0;">"Zuhause heize ich zu 100% mit regenerativer Energie. Wir haben Pallets und eine Solaranlage."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/anja.jpeg" alt="Anja" style="width:100%">
+        <div class="w3-container">
+          <h3>ANJA</h3>
+          <p class="w3-opacity" style="margin: 0;">Friseurin</p>
+          <p style="margin: 0 0 2vh 0;">"Ich nehme meinen Müll immer mit nach Hause, wenn kein Mülleimer in der Nähe ist."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/gertrud.jpeg" alt="Gertrud" style="width:100%">
+        <div class="w3-container">
+          <h3>GERTRUD</h3>
+          <p class="w3-opacity" style="margin: 0;">Rentnerin</p>
+          <p style="margin: 0 0 2vh 0;">"Früher gab es viel weniger Mülleimer und trotzdem waren die Städte irgendwie sauberer."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/matteo.jpg" alt="Matteo" style="width:100%">
+        <div class="w3-container">
+          <h3>MATTEO</h3>
+          <p class="w3-opacity" style="margin: 0;">Grafikdesigner, Student</p>
+          <p style="margin: 0 0 2vh 0;">"An Strom oder Wasser sparen habe ich gar nicht gedacht. Das ist das mindeste, was jeder tun sollte!"</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/leonie.jpg" alt="Leonie" style="width:100%">
+        <div class="w3-container">
+          <h3>LEONIE</h3>
+          <p class="w3-opacity" style="margin: 0;">Schülerin</p>
+          <p style="margin: 0 0 2vh 0;">"Wenn ich keinen Mülleimer sehe, werfe ich meinen Müll einfach auf den Boden."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/florian.jpg" alt="Florian" style="width:100%">
+        <div class="w3-container">
+          <h3>FLORIAN</h3>
+          <p class="w3-opacity" style="margin: 0;">Wirtschaftsinformatik Student</p>
+          <p style="margin: 0 0 2vh 0;">"Firmen sollten ein Vorbild sein, und zeigen, dass sich etwas ändert."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/cornelius.jpg" alt="Cornelius" style="width:100%">
+        <div class="w3-container">
+          <h3>CORNELIUS</h3>
+          <p class="w3-opacity" style="margin: 0;">FSJ'ler</p>
+          <p style="margin: 0 0 2vh 0;">"Ich sehe die Verantwortung vor allem auch bei den Supermärkten."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/brigitte.jpg" alt="Brigitte" style="width:100%">
+        <div class="w3-container">
+          <h3>BRIGITTE</h3>
+          <p class="w3-opacity" style="margin: 0;">Weinbautechnikerin</p>
+          <p style="margin: 0 0 2vh 0;">"Nach dem Wochenende entdecke ich in meinen Weinbergen oft Müll."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/person.jpg" alt="Sina" style="width:100%">
+        <div class="w3-container">
+          <h3>SINA</h3>
+          <p class="w3-opacity" style="margin: 0;">Macht ein Gap-year</p>
+          <p style="margin: 0 0 2vh 0;">"Vor allem Zigaretten sieht man oft rumliegen."</p>
+        </div>
+      </div>
+    </div>
+    <!--<div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/wilfried.jpeg" alt="Wilfried" style="width:100%">
+        <div class="w3-container">
+          <h3>WILFRIED</h3>
+          <p class="w3-opacity" style="margin: 0;">Ingenieur</p>
+          <p style="margin: 0 0 2vh 0;">"Unsere Kinder Mülltrennung dadurch, dass sie es jeden Tag anwenden müssen."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/gertrud.jpeg" alt="Gertrud" style="width:100%">
+        <div class="w3-container">
+          <h3>GERTRUD</h3>
+          <p class="w3-opacity" style="margin: 0;">Rentnerin</p>
+          <p style="margin: 0 0 2vh 0;">"Ich entsorge meinen Müll immer aber wenn ein Mülleimer überfüllt ist stelle ich meinen Müll daneben."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/interview/matteo.jpg" alt="Matteo" style="width:100%">
+        <div class="w3-container">
+          <h3>MATTEO</h3>
+          <p class="w3-opacity" style="margin: 0;">Grafikdesigner</p>
+          <p style="margin: 0 0 2vh 0;">"Meine Heizung wird zuqofähiwAjos#CLYÖMX  100% mit regenerativen Energien beheizt."</p>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>EMPATHY MAP</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Um unsere Erkenntnisse aus den Interviews zu gliedern und uns über die keylearnings klar zu werden,
+        erstellten wir im nächsten Schritt eine Empathy Map. Wir begannen hierbei, eine Übersicht zu erstellen
+        über die Personen, die wir befragt hatten. <br/><br/>
+        Anschließend füllten wir die Wand mit Post It's, auf die wir Zitate schrieben, welche wir aus unseren
+        Interviews mitgenommen hatten.<br/><br/>
+        Gleichzeitig erstellten wir eine Skala, auf der wir mit Pfeilen verordeten, als wie umweltbewusst
+        sich unsere Interviewpartner eingeschätzt haben. Es ist deutlich zu erkennen, dass sich die meisten
+        Personen im oberen Drittel der Skala einordnen. Aus den Interviews geht hervor, dass dies hauptsächlich
+        auf deren Unwissenheit zurückzuführen ist. Je mehr sich eine Person mit dem Thema Umwelt beschäftigt
+        hat, umso mehr weiß sie darüber Bescheid, was sie noch alles tun könnte, um die Umwelt zu verbessern.
+        Daher ordnen sich eben solche Personen eher im unteren Teil der Skala ein, während umweltunbewusste
+        Personen gar nicht wissen, wie sie ihre Umwelt verbessern können und sich daher für besonders umweltbewusst
+        halten, obwohl sie nicht viel mehr tun, als zuhause ihren Müll zu trennen.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/empathymap.jpg" onclick="onClick(this)" alt="Empathy Map User" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+  <div class="w3-container" style="padding:128px 16px 0 16px" id="about">
+    <h3 class="w3-center">KEY LEARNINGS</h3>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-bed w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large" style="margin: 0;">Faulheit</p>
+        <p style="margin: 1vh 1vw;">
+          Viele unserer Befragten lassen ihren Müll einfach fallen, wenn
+          kein Mülleimer in der Nähe ist.
+        </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-lightbulb-o w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large" style="margin: 0;">Unwissenheit</p>
+        <p style="margin: 1vh 1vw;">
+          Viele wissen überhaupt nicht, was sie noch alles für die Umwelt
+          tun könnten, ohne selbst einen Mehraufwand zu haben.
+        </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-child w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large" style="margin: 0;">Erziehung</p>
+        <p style="margin: 1vh 1vw;">
+          Bereits im Kindergarten bekommen Kinder Mülltrennung durch die
+          tägliche Anwendung und Wiederholung beigebracht.
+        </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-trash-o w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large" style="margin: 0;">Überfüllte Mülleimer</p>
+        <p style="margin: 1vh 1vw;">
+          Überfüllte Mülleimer werden nicht nur als störend wahrgenommen,
+          sondern motivieren Passanten sogar dazu, ihren Müll einfach daneben
+          zu stellen.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>INTERVIEW BAUBETRIEBSAMT</h3>
+      <p style="margin: 0 8vw 0 0;">
+        <b>Aufgaben & Tätigkeiten</b><br/>
+        Im Interview mit dem Leiter der Stadtreinigung Schwäbisch Gmünd erfuhren wir von den
+        Aufgaben und Tätigkeiten der Stadtarbeiter. <br/>Die Hauptaufgabe dieser ist mit
+        Sicherheit die Sauberhaltung der Stadt. Hierzu gehören, neben den Büro- und
+        Verwaltungsaufgaben, hauptsächlich die Leerung der 530 öffentlichen Mülleimer, die
+        Entfernung von Graffities, das Mähen von Grünflächen, Kehren, Reinigung der Regen-
+        und Abwasserrinnen am Straßenrand, das sauber halten der über 20 Brunnen, der
+        Winterdienst, der Transport von schweren und großen Objekten, sowie die Organisation
+        und Mithilfe bei Events, wie beispielsweise der Landschaftsputzete.<br/><br/>
+        <b>Alltag eines Mitarbeiters</b><br/>
+        In Schwäbisch Gmünd gibt es rund 530 öffentliche Mülleimer, davon sind ca 70 Hundetoiletten,
+        deren Leerung ebenfalls in das Aufgabengebiet eines Stadtarbeiters zählt. <br/>Allein
+        in der Altstadt stehen ca 60 Mülleimer. Hier legen die Mitarbeiter besonders großen
+        Wert auf die Sauberkeit und das Stadtbild, weshalb die Mülleimer dort sogar 2-3 Mal
+        täglich geleert werden. <br/>Hierzu fahren ab sieben Uhr die ersten Kolonnen los.
+        Gleichzeitig sammeln die Kolonnenn auch den Müll auf, der sich neben und um die Mülleimer
+        angesammelt hat. "Das braucht halt die meiste Zeit", sagt der Leiter der Stadtreinigung
+        Schwäbisch Gmünd. Außerdem stellt er fest, dass vor allem Verpackungsmüll "unwahrscheinlich
+        viel Platz wegnimmt [durch] die Boxen". Daher möchte er an vielen Orten gerne noch
+        weitere Mülleimer aufstellen. Die Mitarbeiter der Stadtreinigung "wissen schon ihre
+        Stellen", an denen besonders viel Müll liegt. Dennoch sind sie immer dankbar, auf
+        besonders vermüllte Stellen aufmerksam gemacht zu werden, da man mit der Zeit "einfach
+        den Blick dafür verliert".<br>Auf die Frage, warum denn so viel Müll neben den
+        Mülleimern liegt antwortet der Meister, dass "viele die Mülleimer wohl einfach nicht
+        finden. Obwohl ja genug da sind!".<br/><br/>
+        Nachdem die Kolonnen den Müll aufgesammelt haben wird er in die Oberbettringer Straße
+        180 gefahren, wo er abgeladen und zwischengelagert wird, bevor er gesammelt der GOA
+        übergeben wird. Was dort mit dem Müll passiert weiß er nicht. Getrennt wird der Müll
+        hier jedenfalls nicht, "da bräuchte man ja dann auch getrennte Autos zum transportieren.
+        Sowas haben wir hier ja gar nicht!".<br/><br/>
+        <b>Pain & Gain</b><br/>
+        Besonders viel Spaß macht dem Leiter des Stadtreinigung Schwäbisch Gmünd zu sehen,
+        dass die Stadt sauber ist. <br/>Bürger, die ihm und seinen Kollegen ihren Müll jedoch
+        provokativ vor die Füße werfen kann er jedoch überhaupt nicht leiden. Ebenfalls stören
+        ihn die Graffities, die immer wieder an die Wände gesprayt werden. <br/><br/>
+        <b>Wilder Müll</b><br/>
+        Sogenannter "wilder Müll" ist ebenfalls ein Punkt, der ihm sehr am Herzen liegt.
+        Wilder Müll ist Müll, der illegal abgeladen wird. Meistens finden sie Hausmüll, aber
+        auch Autoteile,… werden öfter mal gefunden. Ein beliebter Platz hierfür seien vor
+        allem die Altglascontainer. <br/><br/>"Fast wöchentlich" werden Personen zur Verantwortung
+        gezogen, die ihren Müll illegal abgelegt haben. Diese werden hauptsächlich durch
+        Rechnungen, Namen auf Briefumschlägen oder ähnlichem ausfindig gemacht. "Wir gucken
+        in den Müll rein, beim Abstellen direkt erwischt man eigentlich nie jemanden", sagt er.<br/>
+        "Die meisten Leute sehen das dann schon ein und gestehen. Es gibt aber auch hartnäckigere
+        Fälle". "Seit mehr als einem Jahr" stellt seinen Angaben nach immer wieder
+        jemand Autoschrott illegal im Gelände ab. "Ich warte nur drauf, dass der mal
+        einen Fehler macht", erzählt er.<br/>Wer erwischt wird muss mit Bußgeldern ab 100€
+        aufwärts rechnen.<br/><br/>
+        <b>Kontakt zu anderen Organisationen</b><br/>
+        Neben dem bereits genannten Kontakt zur GOA arbeitet die Stadtreinigung eng mit
+        dem Ordnungsamt zusammen, welches die Bußgelder verhängt.<br/>Für jede
+        besondere Situation haben sie Kontakte zu Spezialisten. So haben sie beispielsweise
+        für die Reinigung der Abwasserrillen Kontakt mit der Kanalreinigung, stehen im
+        Austausch mit dem Bürgermeister und wissen, wen sie im Falle eines Einbruches, etc.
+        anrufen können. Außerdem hat die Stadtreinigung einen hauseigenen Schreiner, der
+        neben den Büromöbeln auch die ankommenden Äste kleinhexelt.<br/>
+        Die Deutsche Bahn hat ihre eigenen Mülleimer, die sie eigenständig leert. Alle
+        Mülleimer, die dort stehen gehen die Stadtreinigung nichts an. Ebenso alle Straßen
+        außerhalb der Orte, diese werden immer wieder von der Straßenmeisterei gereinigt.<br/>
+        <!-- "Die haben einfach ganz andere Prioritäten" -->
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/interview.jpg" onclick="onClick(this)" alt="Interview Aufschrieb" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stadt.jpg" onclick="onClick(this)" alt="Auto der Stadt Schwäbisch Gmünd" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/platz.jpg" onclick="onClick(this)" alt="Müllablageplatz der Stadtreinigung Schwäbisch Gmünd" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/wildermuell.jpg" onclick="onClick(this)" alt="Müll in der Innenstadt" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+<div class="w3-row-padding">
+  <div class="w3-col m6">
+    <h3>EMPATHY MAP</h3>
+    <p style="margin: 0 8vw 0 0;">
+      TEXT
+    </p>
+  </div>
+  <div class="w3-col m6">
+    <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/empathymap2.jpeg" onclick="onClick(this)" alt="Empathy Map Leiter der Stadtreinigung Schwäbisch Gmünd" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+  </div>
+</div>
+<div class="w3-container w3-padding-64" style="padding:128px 16px 0 16px" id="about">
+  <h3 class="w3-center">KEY LEARNINGS</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-cubes w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large" style="margin: 0;">Verpackungsmüll</p>
+      <p style="margin: 1vh 1vw;">
+        "Das nimmt halt unwahrscheinlich viel Platz weg, die Boxen!"
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-trash w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Wilder Müll</p>
+      <p style="margin: 1vh 1vw;">
+        Wilder Müll ist Müll, der illegal in der Landschaft abgeladen wird.
+        Er stellt ein großes Problem für die Stadtreinigung dar.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-truck w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Müll aufsammeln</p>
+      <p style="margin: 1vh 1vw;">
+        Die Kolonnen sammeln daneben geworfenen Müll von Hand auf.
+        "Das nimmt halt schon die meiste Zeit weg!"
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-trash-o w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Mülleimer in Gmünd</p>
+      <p style="margin: 1vh 1vw;">
+        530 Mülleimer in Schwäbisch Gmünd, davon allein 60 in der Altstadt.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col">
+      <h3>PERSONAS</h3>
+      <div class="w3-col m4" style="padding: 0 2vw 0 0">
+        <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/Persona1.png" onclick="onClick(this)" alt="Persona1" width="700" height="394">
+        <!-- <p>Problem</p> -->
+      </div>
+      <div class="w3-col m4" style="padding: 0 1vw 0 1vw">
+        <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/Persona2.png" onclick="onClick(this)" alt="Persona2" width="700" height="394">
+        <!-- <p>Lösung</p> -->
+      </div>
+      <div class="w3-col m4" style="padding: 0 0 0 2vw">
+        <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/Persona3.png" onclick="onClick(this)" alt="Persona3" width="700" height="394">
+        <!-- <p>Lösung</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>3-6-3</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Um Konzepte zu generieren wandelten wir uns die sogenannte 6-3-5 Methode ab.<br/>
+        Normalerweise erarbeiten hier 6 Personen 3 Ideen. Anschließend wird das Papier im
+        Uhrzeigersinn weitergegeben und man generiert Ideen, die auf der Idee des Vorgängers
+        aufbauen. Dies wird 5 Mal wiederholt, sodass jeder am Ende das Papier mit seinen
+        Ursprungsideen wieder hat.<br/>
+        Da wir nur 3 Personen im Team sind erhöhten wir die Anzahl der Wiederholungen, sodass
+        am Ende der Methode die gleiche Anzahl an Ideen entstand. <br/><br/>
+        Anschließend hängten wir unsere Ideen an eine Pinnwand und entschieden uns, mit Hilfe
+        des Punktesystems für unsere Favoriten. Hierbei wurde schnell klar, dass wir alle ähnliche
+        Favoriten hatten und viele unserer Ideen vor allem in Kombination miteinander gute
+        Konzepte ergeben würden.<br/>
+        Mit Hilfe der Enten- und Marienkäfer-Pinnadeln kürten wir nach einer kurzen Besprechung
+        unsere gemeinsamen Favoriten. Hierbei stehen die Marienkäfer für unsere "Gewinnerideen"
+        und die Ente für die "Verliereridee", die wir verwerfen wollten.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/363.jpg" onclick="onClick(this)" alt="3-6-3" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+
+  <div class="w3-container w3-left" style="padding:128px 16px 0 16px" id="pricing">
+    <h3 class="w3-center">GEWINNERIDEEN</h3>
+    <!-- <p class="w3-large">Gewinnerideen</p> -->
+    <div class="w3-row-padding" style="margin-top:64px">
+      <!-- <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-green w3-xlarge w3-padding-32">Dankeschön</li>
+          <li class="w3-padding-16 w3-light-grey">
+            Durch eine Lichtschranke oder ähnliche Technik wird erfasst,
+            wann Müll in den Mülleimer geworfen wird.<br/>
+            Per GPS/NFC/Bluetooth wird getrackt, wer gerade Müll
+            ordnungsgemäß entsorgt hat. Diese Person bekommt dann ein
+            Dankeschön Pop-up auf seinem Handy angezeigt, wodurch sie
+            motiviert werden soll, auch in Zukunft ihren Müll ordnungsgemäß
+            zu entsorgen.<br/><br/>
+            Langzeitig wird ein Belohnungssystem eingeführt, durch welches man
+            für die ordnungsgemäße Entsorgung von Müll kleine Gutscheine/Belohnungen
+            erhalten kann.<br/>Auch eine Art Challange, wer den meisten Müll
+            richtig entsorgt hat, wäre denkbar. Hier könnten beispielsweise
+            Freunde gegeneinander antreten und sich so gegenseitig dazu motivieren,
+            Müll richtig zu entsorgen, anstatt ihn einfach fallen zu lassen,
+            wenn gerade mal kein Mülleimer in Sicht ist.
+          </li>
+        </ul>
+      </div> -->
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-green w3-xlarge w3-padding-32 ">Komprimierung</li>
+          <li class="w3-padding-16 w3-light-grey">
+            Durch ein Komprimierungsverfahren wird sperriger Müll, wie
+            beispielsweiseVerpackungsmüll verkleinert, damit er weniger
+            Platz in Anspruch nimmt und mehr Müll in den Mülleimer
+            passt. Zu schnell gefüllte Mülleimer wurden von unserem Interview-Partner
+            als Stressfaktor genannt, das reine erfassen der Füllmenge empfindet er nicht als
+            allzu große Hilfe, da der Mülleimer, selbst wenn ihn ein Sensor als "Voll" meldet,
+            trotzdem weiter überfüllt wird.
+            <br/>
+            <br/>
+            Der Müll könnte zum Beispiel durch ein Gewicht komprimiert werden, das von oben oder von der
+             Seite herabgelassen wird. Alternativ könnte der Inhalt zerkleinert werden. Dies würde vorraussetzen, dass
+             der Müll zuvor getrennt wird, da zum Beispiel Falschen nicht zerkleinert werden sollten und auch schwer komprimiert
+             werden können.
+             <br/><br/> Eine Mülltrennung in der Tonne müsste über Sensorik festgestellt werden, die zum Beispiel das Gewicht
+             feststellt. Für eine breitere Vielfalt an Ideen der Komprimierung des Mülls wurde eine Crazy8 geplant.
+             Zunächst soll anhand der "Wizard of Oz"-Methode eine denkbare Situation mit dem Produkt nachgestellt werden. Im Anschluss
+             werden Möglichkeiten für die Umsetzung eines Prototypen mit relevanten Technologien gesammelt und erstellt.
+
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-green w3-xlarge w3-padding-32">Aufklärung</li>
+          <li class="w3-padding-16 w3-light-grey">
+            Duch Sensorik wird getrackt, wann Müll in einen Mülleimer
+            geworfen wird. Die Sensorik soll auch erfassen können, um
+            was für eine Art von Müll es sich handelt. <br/><br/>
+            Auf einem integrierten Display wird angezeigt, was mit diesem
+            Müll im weiteren Verlauf passiert.<br/> Der Nutzer wird somit
+            darüber aufgeklärt wie der Müll weiterverarbeitet wird, um in
+            Zukunft besser abschätzen zu können, wie sinnvoll es ist, seinen
+            Müll in einen Mülleimer zu werfn.<br/><br/>Gleichzeitig soll über
+            Sensorik im Boden erfasst werden, welcher Müll den Mülleimer
+            verfehlt und die entsprechenden User ebenfalls durch ein
+            Display, welches über die Folgen von Müll auf dem Boden, dazu
+            animieren, ihren Müll wieder aufzuheben und in den Mülleimer zu
+            werfen.<br/><br/>Auch denkbar wäre für uns ein kleiner
+            Aufklärungsstand, welcher den Nutzern via AR zeigt, wie ihre
+            Stadt in ein paar Jahren aussehen könnte, wenn sie ihren Müll
+            weiterhin auf dem Boden verteilen, anstatt ihn 100m weiter in
+            einem Mülleimer zu entsorgen.
+          </li>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-green w3-xlarge w3-padding-32">Hingucker</li>
+          <li class="w3-padding-16 w3-light-grey">
+            Durch verschiedene Techniken wollen wir Passanten darauf
+            aufmerksam machen, wo sie den nächsten Mülleimer finden können.<br/><br/>
+            Auffällige und optisch ansprechende Mülleimer sollen hierbei Kinder
+            dazu animieren, ihren Müll gerne ordnungsgemäß zu entsorgen und
+            dafür gerne auch ein paar Meter weit zu gehen. <br/><br/>
+            Gleichzeitig wollen wir durch Plakate/Fußspuren am Boden oder ähnliche
+            Hingucker, Passanten zeigen, wo sich der für sie nächste Mülleimer befindet.<br/>
+            Hierdurch wird Unwissenheit aus dem Weg geräumt und verhindert,
+            dass Passanten ihren Müll einfach fallen lassen, weil sie in
+            der Nähe keinen Mülleimer sehen können.<br/><br/>
+            Denkbar wäre hierfür auch eine App, die Passanten darüber aufklärt,
+            wo sich in ihrer Nähe Mülleimer befinden, die sie verwenden können.<br/>
+            Die App soll mit den Mülleimern verknüpft sein, sodass die User jedes
+            Mal, wenn sie ihren Müll ordnungsgemäß entsorgt haben, positives Feedback
+            erhalten.<br/>
+            Hierdurch wird die Motivation gefördert, den Müll auch weiterhin richtig
+            zu entsorgen.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-light-grey" id="about">
+  <h3 class="w3-center">THESE</h3>
+  <p style="margin: 0 25vw 0 25vw;">
+    Städte brauchen Mülleimer, die nicht so schnell voll werden,
+    damit Nutzer nicht gezwungen sind, ihren Müll neben oder
+    auf den Mülleimer zu stellen und das Stadtbild positiv
+    beeinflusst wird.
+  </p>
+</div>
+
+<div class="w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Zielgruppe & Konzept</h3>
+  <p style="margin: 0 22vw 0 22vw;">
+    Nach unseren Recherchen stellten wir fest, dass unsere ursprüngliche
+    Zielgruppe, die uninteressierten Bürger, schwer zu erreichen sind.<br/>
+    Stattdessen kristallisierte sich immer mehr heraus, dass wir die
+    Personen unterstützen wollen, die sich um die Leerung der Mülleimer
+    kümmern.<br/><br/>Hierbei legten wir unseren Fokus auf die Verlängerung
+    der Nutzungszyklen der Mülleimer. Dies wollten wir durch die Komprimierung
+    des sperrigen Verpackungsmülls erreichen.
+  </p>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Crazy 8</h3>
+      <p style="margin: 0 8vw 0 0;">
+
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/crazy.jpg" onclick="onClick(this)" alt="Crazy 8" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col">
+      <h3>STORYBOARD</h3>
+      <div class="w3-col m6" style="padding: 0 2vw 0 0">
+        <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/prob.jpg" onclick="onClick(this)" alt="Storyboard Problem" width="700" height="394">
+        <!-- <p>Problem</p> -->
+      </div>
+      <div class="w3-col m6" style="padding: 0 0 0 2vw">
+        <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/solution.jpg" onclick="onClick(this)" alt="Storyboard Lösung" width="700" height="394">
+        <!-- <p>Lösung</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>6 THINKING HATS</h3>
+      <p style="margin: 0 8vw 0 0;">
+
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/6hats.jpg" onclick="onClick(this)" alt="6 thinking hats" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>WIZARD OF OZ</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Im Anschluss an unsere Recherche, Ideengenerierung und Synthese, begannen wir,
+        einen Low-Fidelity Prototypen zu bauen. Hierzu nahmen wir einen Karton, der
+        unseren Mülleimer darstellen sollte und ahmten diverse Komprimierungskonzepte
+        mit unseren Händen nach. <br/><br/>
+        <b>Pressen</b><br/>
+        Mit Hilfe von elektrisch gesteuerten Armen, bzw. Platten wird der eingeworfene
+        Müll plattgedrückt, wodurch der Mülleimer sich langsamer füllt, seltener geleert
+        werden muss und weniger Müll neben dem Mülleimer landet.
+        <br/><br/>
+        <b>Schreddern</b><br/>
+        Durch eine Art Hexler wird der eingeworfene Müll zerkleinert, wodurch er nicht
+        nur weniger Platz einnimmt, sondern sich außerdem besser an die Form des
+        Mülleimers anpasst. Hierdurch kann noch mehr Müll in den Mülleimer geworfen
+        werden, bis er entgültig voll ist.
+      </p>
+    </div>
+    <div class="w3-col m6" style="text-align:center; float:center ;">
+      <video src="../data/sprint/muell.mp4" controls></video>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="w3-container w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6" style="padding-right: 8%">
+      <h3>FAZIT</h3>
+      <p style="margin: 0">
+        Obwohl Schwäbisch Gmünd eine Stadt ist, die auf den ersten Blick sauber und
+        aufgeräumt wirkt und die Strecke zwischen Zapp und Bahnhof gerade einmal 800m
+        lang ist, haben wir alle ein bis zwei Meter Müll Kleinteile gefunden. <br/><br/>
+        Hierbei ist uns aufgefallen, dass vor allem biologisch nicht abbaubarer Müll
+        zu finden war, wohingegen kein Biomüll gefunden wurde. <br/>
+        Außerdem ist uns aufgefallen, dass vor allem Mülleimer selbst ein Hauptsammelpunkt
+        für Müll auf dem Boden ist.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Glas</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:3.75%">3,75%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Papier</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:18.75%">18,75%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Restmüll</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:27.5%">27,5%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Plastik</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:50%">50%</div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-32" style="padding-bottom: 0; margin-bottom: 0">
+  <div class="w3-xlarge w3-section">
+      <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
+      <a href="http://marinarost.de/" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+      <a href="https://janaseemann.de" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Jana.jpg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+      <a href="https://vanessastoeckel.de/" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+  </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
