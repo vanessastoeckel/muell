@@ -279,7 +279,7 @@ background-attachment: fixed;
 .bgimg-5 {
 background-position: center;
 background-size: cover;
-background-image: url("data/research/research.jpg");
+background-image: url("data/sprint/research.jpg");
 min-height: 60vh;
 background-attachment: fixed;
 background-position-y: -34vh;
@@ -287,7 +287,7 @@ background-position-y: -34vh;
 .bgimg-6 {
 background-position: center;
 background-size: cover;
-background-image: url("data/research/empathy.jpg");
+background-image: url("data/sprint/empathy.jpg");
 min-height: 40vh;
 background-attachment: fixed;
 }
@@ -300,7 +300,7 @@ min-height: 100%;
 .bgimg-8 {
 background-position: center;
 background-size: cover;
-background-image: url("data/research/empathy.jpg");
+background-image: url("data/sprint/empathy.jpg");
 min-height: 40vh;
 background-attachment: fixed;
 }
