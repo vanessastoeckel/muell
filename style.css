@@ -305,6 +305,14 @@ min-height: 40vh;
 background-attachment: fixed;
 }
 
+.bgimg-9 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("data/szenario/titel.jpg");
+  min-height: 60vh;
+  background-attachment: fixed;
+  }
+
 
 .w3-bar .w3-button {
   padding: 16px;
