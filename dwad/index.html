@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<title>User Experience Design 2 - DIE WELT ALS DESIGN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css?family=Heebo:100,300" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><b>LOGO</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../sprint/index.html" class="w3-bar-item w3-button"><i class="fa fa-rocket"></i> SPRINT</a>
+      <a href="../cb/index.html" class="w3-bar-item w3-button"><i class="fa fa-tasks"></i> CONCEPT BUILDING</a>
+      <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i><b> DIE WELT ALS DESIGN</b></a>
+      <a href="../szenario/index.html" class="w3-bar-item w3-button"><i class="	fas fa-route"></i> SZENARIO</a>
+      <a href="../ML/index.html" class="w3-bar-item w3-button"><i class="	fas fa-robot"></i> MACHINE LEARNING</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../sprint/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN SPRINT</a>
+  <a href="../cb/index.html" onclick="w3_close()" class="w3-bar-item w3-button">CONCEPT BUILDING</a>
+  <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
+  <a href="../szenario/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SZENARIO</a>
+  <a href="../ML/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MACHINE LEARNING</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-6 w3-display-container" id="home"></header>
+
+<div class="w3-container  w3-padding-64">
+  <h3 class="w3-center">HAUPTBESTANDTEILE</h3>
+  <p style="margin: 0 22vw 0 22vw;">
+    Unsere erste Aufgabe im Workshop war es, unser Projekt auf 
+    zehn Hauptbestandteile herunterzubrechen.<br/>
+    Hierzu schrieben wir erst einmal alle Bestandteile auf, die 
+    unser Projekt beinhaltet und klasterten, bzw. sortierten diese 
+    anschließend.
+  </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-child w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large" style="margin: 0;">Stadtarbeiter</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Sammeln Müll der Bürger ein.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-trash w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Mülleimer</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Werden zu schnell voll.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-weight w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Sensorik</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Könnte Füllstand oder Gewicht tracken.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-clipboard w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Auswertung</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Hilft bei der Routenplanung.
+      </p>
+    </div>
+  </div>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fas fa-brain w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large" style="margin: 0;">Planung</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Essenziell für die Effizienz der Arbeiter.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-truck w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Müllauto</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Kann evtl. Sensorik beinhalten.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-diagnoses w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Bürger</p>
+      <p class="w3-opacity" style="margin: 0 1vw;">
+        Produzieren Müll.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-holly-berry w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large" style="margin: 0;">Müll</p>
+      <p class="w3-opacity" style="margin: 1vh 1vw;">
+        Liegt in und neben Mülleimern.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>ALTERNATIVEN</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Platzhalter
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stakeholder.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>AIRB&B-METHODE</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Platzhalter
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stakeholder.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<footer class="w3-center w3-black w3-padding-32" style="padding-bottom: 0; margin-bottom: 0">
+  <div class="w3-xlarge w3-section">
+      <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
+      <a href="http://marinarost.de/" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+      <a href="https://janaseemann.de" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Jana.jpg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+      <a href="https://vanessastoeckel.de/" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+  </div>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

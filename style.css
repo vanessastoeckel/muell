@@ -285,11 +285,12 @@ background-attachment: fixed;
 background-position-y: -34vh;
 }
 .bgimg-6 {
-background-position: center;
 background-size: cover;
-background-image: url("data/sprint/empathy.jpg");
-min-height: 40vh;
+background-image: url("data/dwad/banner.jpg");
+min-height: 60vh;
 background-attachment: fixed;
+background-position-y: -25vh;
+background-position-x: 4.5vw;
 }
 .bgimg-7 {
 background-position: center;
