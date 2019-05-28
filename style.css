@@ -295,8 +295,8 @@ background-position-x: 4.5vw;
 .bgimg-7 {
 background-position: center;
 background-size: cover;
-background-image: url("data/eimer.jpg");
-min-height: 100%;
+background-image: url("data/cb/banner.jpg");
+min-height: 60vh;
 }
 .bgimg-8 {
 background-position: center;
@@ -312,7 +312,15 @@ background-attachment: fixed;
   background-image: url("data/szenario/titel.jpg");
   min-height: 60vh;
   background-attachment: fixed;
-  }
+}
+
+.bgimg-10 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("data/UI/xd.jpg");
+  min-height: 60vh;
+  background-attachment: fixed;
+}
 
 
 .w3-bar .w3-button {

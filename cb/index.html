@@ -22,6 +22,8 @@
       <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i><b> DIE WELT ALS DESIGN</b></a>
       <a href="../szenario/index.html" class="w3-bar-item w3-button"><i class="	fas fa-route"></i> SZENARIO</a>
       <a href="../ML/index.html" class="w3-bar-item w3-button"><i class="	fas fa-robot"></i> MACHINE LEARNING</a>
+      <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i> INTERFACE</a>
+      <a href="../mapbox/index.html" class="w3-bar-item w3-button"><i class="	fas fa-map"></i> MAPBOX</a>
     </div>
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -38,80 +40,29 @@
   <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
   <a href="../szenario/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SZENARIO</a>
   <a href="../ML/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MACHINE LEARNING</a>
+  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
+  <a href="../mapbox/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MAPBOX</a>
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-5 w3-display-container" id="home"></header>
+<header class="bgimg-7 w3-display-container" id="home"></header>
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container" style="padding:128px 16px;" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>MOLDELL</h3>
+      <h3>MODELL</h3>
       <p style="margin: 0 8vw 0 0;">
-        Platzhalter
+        Um unseren, im Design Sprint entstandenen, Wizard of Oz noch ein wenig mehr zu 
+        verdeutlichen, begannen wir, diesen in einem roughen Prototypen umzusetzen.<br/>
+        <br/>
+        Zur Umsetzung entschieden wir uns für ein Modell, auf dem in Miniaturansicht, auf 
+        der linken Seite, eine Straße und ein Mülleimer zu sehen sind. Auf der rechten 
+        Seite hingegen ist Schaubildhaft das Müllauto abgebildet, in welches wir eine 
+        Wage itegrieren wollten, über welche die Müllmenge getrackt werden kann.
       </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/dwad/modell.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>EMPATHY MAP</h3>
-      <p style="margin: 0 8vw 0 0;">
-        Platzhalter
-      </p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/dwad/empathy.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>WEITERE RECHERCHEN</h3>
-      <p style="margin: 0 8vw 0 0;">
-        Platzhalter
-      </p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/dwad/research.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>INTERVIEW STADTARBEITER</h3>
-      <p style="margin: 0 8vw 0 0;">
-        Platzhalter
-      </p>
-    </div>
-    <div class="w3-col m3">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/dwad/interview1.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
-    </div>
-    <div class="w3-col m3">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/dwad/interview2.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>JOB SHADOWING</h3>
-      <p style="margin: 0 8vw 0 0;">
-        Platzhalter
-      </p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stakeholder.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/cb/modell.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
     </div>
   </div>
 </div>
@@ -121,11 +72,132 @@
     <div class="w3-col m6">
       <h3>INTERVIEW GOA</h3>
       <p style="margin: 0 8vw 0 0;">
+        Wir fanden durch weitere Recherchen heraus, dass es vor allem bei Hausmüll illegal ist, 
+        diesen zu komprimieren, da dieser nach der Abholung noch weiter sortiert wird, um 
+        Rohstoffe herauszufiltern und brennbare von nicht brennbaren Gegenständen zu trennen. 
+        Daher wollten wir weitere Infos sammeln, wie dies bei öffentlich entstandenem Müll aussieht 
+        und was mit diesem nach der Leerung überhaupt passiert.<br/>
+        Aus unserem Interview mit dem Leiter des Baubetriebsamtes wissen wir zwar, dass der Müll 
+        dort auf dem Hof abgeladen wird. Jedoch konnte uns der Leiter auch nur sagen, dass dieser 
+        Müll irgendwann von der GOA abgeholt wurde, nicht aber, was diese dann mit dem Müll tut.<br/>
+        <br/>
+        Bei unserem Interview mit der GOA ging es daher hauptsächlich darum, was mit dem Müll nach 
+        der Abholung am Lagerungsort passiert.<br/>
+        So fanden wir heraus, dass eben dieser Müll nach der Abholung nicht weiter sortiert wird, 
+        sondern so wie er kommt, im "Müllheizkraftwerk thermisch verwertet" wird. Aus dieser 
+        thermischen Energie wird anschließend Strom und Fernwärme erzeugt. <br/>
+        <br/>
+        Für uns ergab sich aus diesem Gespräch das Fazit, dass der Komprimierung des öffentlichen 
+        Mülls nichts im Wege steht und unser Projekt somit möglich und legal ist.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <a href="https://www.goa-online.de/aktiv/nachhaltigkeit-soziales/GOA-spendet-M--llfahrzeug-f--r-Missionsstation-in-Fushez-Arrez--Nordalbanien-/">
+        <img class="w3-image w3-round-large w3-hover-opacity" src="../data/cb/Muelwagen_2-neu.jpg" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      </a>
+    </div>
+  </div>
+</div>
+<!-- 
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>JOB SHADOWING</h3>
+      <p style="margin: 0 8vw 0 0;">
         Platzhalter
       </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stakeholder.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div> -->
+
+<div class="w3-container" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>INTERVIEW STADTARBEITER</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Da uns beim Bau des Modelles auffiel, dass wir bis zu diesem Zeitpunkt noch nicht 
+        genügend insights gesammelt hatten, beschlossen wir noch ein weiteres Interview zu 
+        führen. Hierfür wollten wir diesmal jedoch einen der Mitarbeiter aus den Kolonnen 
+        abgreifen, und spontan mit diesen sprechen. <br/>
+        <br/>
+        Wir nutzten das gute Wetter, um einen der vielen Mitarbeiter der Stadt anzusprechen 
+        und ihm einige Fragen zu stellen, die uns zu diesem Zeitpunkt beschäftigten. <br/>
+        So fanden wir beispielsweise heraus, dass der Job im Sommer sehr viel mehr Arbeit 
+        bringt, als im Winter. <br/>
+        Wie auch den Leiter des Baubetriebsamtes, stört es auch den Mitarbeiter, der 
+        tatsächlich in den Kollonnen arbeitet, um Müll aufzusammeln, dass immer wieder so 
+        genannter wilder Müll illegal auf den Straßen abgeladen wird. Außerdem stören ihn 
+        vor allem große Gegenstände, die in den öffentlichen Mülleimern entsorgt werden. 
+        Jedoch stellt es für ihn eine ebenso große Freude dar, seine Stadt sauber zu sehen, 
+        dass ihn weder das Wetter, noch der Müll, den er immer wieder neben den Mülleimern 
+        aufsammeln muss stört.
+      </p>
+    </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/cb/interview1.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/cb/interview2.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>EMPATHY MAP</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Basierend auf dem soeben geführten Interview erstellten wir anschließend eine 
+        Empathy Map für Bernd, den Stadtarbeiter. Dies half uns, das gehörte zu klastern 
+        und die neuen Infos zu analysieren. <br/>
+        <br/>
+        Hierbei fiel uns auf, dass auch Bernd ein Problem damit hat, wilden Müll in seiner 
+        Stadt liegen zu sehen. Auch ihn freut es immer wieder, die Stadt sauber zu sehen. <br/>
+        <br/>
+        Jedoch erfuhren wir auch, dass man als Mitarbeiter einer Kolonne, seine Strecke irgendwann 
+        so gut kennt, dass man den Müll an anderen Orten teilweise ganz übersieht. <br/>
+        <br/>
+        Im Winter, wenn es draußen kalt ist hat Bernd nicht so viel zu tun wie im 
+        Sommer. Dies kommt daher, dass sich im Sommer viel mehr Menschen draußen aufhalten, als 
+        im Winter. Hierdurch fällt auch mehr Müll an.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/cb/empathy.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>INTERNET RECHERCHEN</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Im Interview mit Bernd erfuhren wir neben den nützlichen Infos rund um seinen 
+        Arbeitsalltag auch von einem Mülleimer in Hamburg, der per LED anzeigen soll, 
+        wie voll er ist, bzw. wie viel Müll noch Platz hat.<br/>
+        <br/>
+        Da dies auch ein wichtiger Punkt unseres Projektes werden sollte begannen wir, 
+        diese Mülleimer zu recherchieren. Schnell fanden wir heraus, dass besagte Mülleimer 
+        nicht nur per LED ihren Füllstand kundtun, sondern auch mit lustigen Sprüchen 
+        beklebt sind, die die Nutzer dazu animieren sollen, ihren Müll auch tatsächlich 
+        in den Mülleimer zu werfen. Außerdem befindet sich im inneren des Mülleimers ein 
+        Komprimierungssystem, durch welches die Nutzungsdauer des Mülleimers deutlich 
+        verlängert wird. <br/>
+        <br/>
+        Zusammengefasst: die Firma <a href="http://bigbelly.com">BigBelly</a> aus Amerika 
+        hat mit ihrer High Capacity Solution <a href="http://info.bigbelly.com/hc-data-sheet">HC5</a> 
+        genau das Projekt, welches wir im Kopf haben bereits umgesetzt. Und das besser, als 
+        wir es in einem Semester je könnten.<br/>
+        <br/>
+        <a href="https://www.youtube.com/watch?v=Ervb3qX_xi8">HC5 Video</a>
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/cb/research.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
     </div>
   </div>
 </div>
