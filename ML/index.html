@@ -22,8 +22,9 @@
       <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> DIE WELT ALS DESIGN</a>
       <a href="../szenario/index.html" class="w3-bar-item w3-button"><i class="	fas fa-route"></i> SZENARIO</a>
       <a href="../ML/index.html" class="w3-bar-item w3-button"><i class="	fas fa-robot"></i><b> MACHINE LEARNING</b></a>
-      <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i> INTERFACE</a>
       <a href="../mapbox/index.html" class="w3-bar-item w3-button"><i class="	fas fa-map"></i> MAPBOX</a>
+      <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i> INTERFACE</a>
+      <a href="../testing/index.html" class="w3-bar-item w3-button"><i class="fa fa-thumbs-up"></i> TESTING</a>
     </div>
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -40,26 +41,80 @@
   <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
   <a href="../szenario/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SZENARIO</a>
   <a href="../ML/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MACHINE LEARNING</a>
-  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
   <a href="../mapbox/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MAPBOX</a>
+  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
+  <a href="../testing/index.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTING</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-5 w3-display-container" id="home"></header>
 
-<!-- <div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container" style="padding:64px 16px;" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
-      <h3>STAKEHOLDER MAP</h3>
+      <h3>WEKINATOR</h3>
       <p style="margin: 0 8vw 0 0;">
-        Platzhalter
+        Unsere erste Erfahung mit Machine Learning machten wir mit Hilfe des 
+        Programmes "Wekinator". <br>
+        Mit Wekinator war es uns möglich, Positionen von Gesichtern zu tracken 
+        und diese auf einen bestimmten Ton zu trainieren.<br><br>
+        Von Experten wurde uns jedoch geraten, aufgrund neuester <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:6523598198383091712/">Videos</a> unsere 
+        Anwendung mit Hilfe der IBM Cloud umzusetzen.
       </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/sprint/stakeholder.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <video class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/wekinator.mov" onclick="onClick(this)" controls alt="ML with Wekinator" width="700" height="394">
     </div>
   </div>
-</div> -->
+</div>
+
+<div class="w3-container w3-light-grey" style="padding:64px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>IBM Cloud</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Aufgrund des Videos und der Expertenmeinung, begannen wir uns in die IBM Cloud einzuarbeiten.<br/><br>
+        Wir kreierten einen so genannten "Machine Learning-Service" und einen Speicherplatz in der Cloud 
+        von IBM. Anschließend erstellten wir darin einen "Bucket", also einen Ort, an dem wir all unsere 
+        Bilder hochladen und labeln konnten. Nachdem wir in jeder Rubrik einige Bilder gelabelt hatten, 
+        begannen wir testweise die Daten zu trainieren, wobei wir auf erste Schwierigkeiten stießen.
+        Diese konnten wir jedoch schnell lösen. <br><br>Der nächste Schritt sollte es sein, das trainierte 
+        Modell herunterzuladen, um mit diesem weiterarbeiten zu können. Bis heute hängen wir an diesem 
+        Punkt fest, da wir hier immer nur Fehlermeldungen bekamen und niemand uns mit unserer Fragestellung 
+        weiterhelfen konnte. <br><br>
+        Wir entschieden uns daher, noch eine weitere Machine Learning Variante anzuschauen.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <!-- <img class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/ibm.png" onclick="onClick(this)" alt="ML with the IBM cloud" height="394" style="margin-bottom: 10vh; max-height: 100vh;"> -->
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/ibm.jpg" onclick="onClick(this)" alt="ML with the IBM cloud" height="394">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:64px 16px;" id="empathy map">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>MACHINE LEARNING MIT STEFFEN</h3>
+      <p style="margin: 0 8vw 0 0;">
+        Im Fach "Machine Learning" ging es im zweiten Projekt darum, Machine Learning 
+        auszuprobieren. Wir entschieden uns daher dafür, beide Fächer miteinander zu 
+        kominieren und mit Hilfe des Inputs des Unterrichtes unseren Hardware-Prototypen 
+        für das Fach "User Experience II" zu bauen.<br><br>
+        Schnell waren wir an einem Punkt, an dem die Website erkennen konnte, was wir 
+        vor die Kamera hielten. Nun mussten, für den nächsten Schritt, die trainierten 
+        Daten nur noch gespeichert und wieder abgerufen werden können.<br><br>
+        Anschließend sollte eine externe Kamera (Webcam) die Bilder aufnehmen und an 
+        den Laptop schicken können. Wenn dies klappte, so unser Ziel, sollten die 
+        aufgenommenen Daten, gemeinsam mit in diesem Moment gemessenen Koordinaten in 
+        eine geojson-Datei gespeichert und live in Mapbox angezeigt werden.
+      </p>
+    </div>
+    <div class="w3-col m6">
+      <video class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/steffen1.mp4" controls onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394">
+    </div>
+  </div>
+</div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">

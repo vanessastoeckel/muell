@@ -19,11 +19,12 @@
     <div class="w3-right w3-hide-small">
       <a href="../sprint/index.html" class="w3-bar-item w3-button"><i class="fa fa-rocket"></i> SPRINT</a>
       <a href="../cb/index.html" class="w3-bar-item w3-button"><i class="fa fa-tasks"></i><b> CONCEPT BUILDING</b></a>
-      <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i><b> DIE WELT ALS DESIGN</b></a>
+      <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> DIE WELT ALS DESIGN</a>
       <a href="../szenario/index.html" class="w3-bar-item w3-button"><i class="	fas fa-route"></i> SZENARIO</a>
       <a href="../ML/index.html" class="w3-bar-item w3-button"><i class="	fas fa-robot"></i> MACHINE LEARNING</a>
+      <a href="../mapbox/index.html" class="w3-bar-item w3-button"><i class="	fas fa-map"></i><b> MAPBOX</b></a>
       <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i> INTERFACE</a>
-      <a href="../mapbox/index.html" class="w3-bar-item w3-button"><i class="	fas fa-map"></i> MAPBOX</a>
+      <a href="../testing/index.html" class="w3-bar-item w3-button"><i class="fa fa-thumbs-up"></i> TESTING</a>
     </div>
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -31,6 +32,8 @@
     </a>
   </div>
 </div>
+
+
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
@@ -40,20 +43,65 @@
   <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
   <a href="../szenario/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SZENARIO</a>
   <a href="../ML/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MACHINE LEARNING</a>
-  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
   <a href="../mapbox/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MAPBOX</a>
+  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
+  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTING</a>
+  <a href="../testing/index.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTING</a>
 </nav>
 
 <!-- Header with full-height image -->
 <header class="bgimg-7 w3-display-container" id="home"></header>
 
-
-
-
-
-
-
-
+<div class="w3-container" style="padding:64px" id="team">
+  <h3 class="w3-center">MAPBOX STYLES</h3>
+  <!-- <p style="margin: 0 25vw;">
+    Platzhalter
+  </p> -->
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/mapbox/1.jpg" alt="1" style="width:100%">
+        <div class="w3-container">
+          <h3>Version 1</h3>
+          <p class="w3-opacity" style="margin: 0;">Lila</p>
+          <p style="margin: 0 0 2vh 0;">
+            "Wenn kein Mülleimer in der Nähe ist werfe ich meine Zigaretten einfach auf den Boden.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/mapbox/2.jpg" alt="2" style="width:100%">
+        <div class="w3-container">
+          <h3>Version 2</h3>
+          <p class="w3-opacity" style="margin: 0;">Gelb</p>
+          <p style="margin: 0 0 2vh 0;">"Unsere Kinder im Kindergarten lernen Mülltrennung dadurch, dass sie es jeden Tag anwenden."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/mapbox/3.jpg" alt="3" style="width:100%">
+        <div class="w3-container">
+          <h3>Version 3</h3>
+          <p class="w3-opacity" style="margin: 0;">Mehrfarbig</p>
+          <p style="margin: 0 0 2vh 0;">"Ich entsorge meinen Müll immer aber wenn ein Mülleimer überfüllt ist stelle ich meinen Müll daneben."</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="../data/mapbox/4.jpg" alt="4" style="width:100%">
+        <div class="w3-container">
+          <h3>Version 4</h3>
+          <p class="w3-opacity" style="margin: 0;">Türkis</p>
+          <p style="margin: 0 0 2vh 0;">"Zuhause heize ich zu 100% mit regenerativer Energie. Wir haben Pallets und eine Solaranlage."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">

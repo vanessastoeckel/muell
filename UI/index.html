@@ -22,8 +22,9 @@
       <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i><b> DIE WELT ALS DESIGN</b></a>
       <a href="../szenario/index.html" class="w3-bar-item w3-button"><i class="	fas fa-route"></i> SZENARIO</a>
       <a href="../ML/index.html" class="w3-bar-item w3-button"><i class="	fas fa-robot"></i> MACHINE LEARNING</a>
-      <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i><b> INTERFACE</b></a>
       <a href="../mapbox/index.html" class="w3-bar-item w3-button"><i class="	fas fa-map"></i> MAPBOX</a>
+      <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i><b> INTERFACE</b></a>
+      <a href="../testing/index.html" class="w3-bar-item w3-button"><i class="fa fa-thumbs-up"></i> TESTING</a>
     </div>
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -40,8 +41,9 @@
   <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
   <a href="../szenario/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SZENARIO</a>
   <a href="../ML/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MACHINE LEARNING</a>
-  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
   <a href="../mapbox/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MAPBOX</a>
+  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
+  <a href="../testing/index.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTING</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -72,8 +74,10 @@
       <img class="w3-image w3-round-large" src="../data/UI/0.jpg" onclick="onClick(this)" alt="User Flow" width="700" height="394">
     </div>
   </div>
+</div>
 
-  <h3 class="w3-center" style="margin:126px 0 32px 0">KOMPONENTEN</h3>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">KOMPONENTEN</h3>
   <p style="margin: 0 25vw 10vh 25vw;">
     Wir überlegten uns anschließend zu jeder einzelnen Komponente verschiedene Varianten, 
     wie diese aussehen könnten. Bei einigen der Komponenten war dies schnell klar, sodass 
@@ -108,8 +112,10 @@
       <img src="../data/UI/9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
+</div>
 
-  <h3 class="w3-center" style="margin:126px 0 32px 0">SCRIBBLES</h3>
+<div class="w3-container" style="padding:128px 16px" id="scribbles">
+  <h3 class="w3-center">SCRIBBLES</h3>
   <p style="margin: 0 25vw 10vh 25vw;">
     Anschließend ging es darum, wireframeartig zu skizzieren, welche Screeneinteilung sinnvoll ist, 
     um die definierten Hirarchieebenen zu erreichen. <br/>
@@ -162,89 +168,345 @@
       <img src="../data/UI/21.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
+</div>
 
-
-  <h3 class="w3-center" style="margin:126px 0 32px 0">WIREFRAMES – V1</h3>
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+<div class="w3-container w3-light-grey" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Version 1</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    In unserer ersten Variante der Wireframes entschieden wir uns dazu, die Toolbar 
+    auf der rechten Seite anzuzeigen. Außerdem entschieden wir uns, aufgrund der 
+    Neutralität dazu, diese in lila anzuzeigen. Auch die Heatmap färbten wir, passend 
+    dazu in dieser Farbe ein.<br/><br>
+    Neben der Anzeige, in welchem Gebiet man sich befindet gibt es die Möglichkeit, 
+    nach einem Bestimmten Ort innerhalb des Gebietes zu suchen. <br/>
+    Man kann per Schnellzugriff auf die Daten von Gestern, Heute, 2018,… zugreifen 
+    und kann so immer schnell häufig verwendete Daten einsehen.
+    Benötigt man ein Datum, welches nicht in der Schnellauswahl voreingestellt ist, 
+    oder möchte verschiedene Daten miteinander vergleichen, so hat man weiter unten 
+    die Möglichkeit, einen Zeitraum einzustellen, in dem man sich die Daten anzeigen 
+    lassen kann. <br/>
+    Außerdem hat man die Option, Mülleimer und Festivals ein- oder auszublenden, was 
+    es dem Nutzer ermöglicht, rückschlüsse darauf zu ziehen, woher der entstandene Müll 
+    kommt. <br/><br>
+    Weiter unten in der Filter-Leiste kann der User anschließend einstellen, welche 
+    Art des Mülls er sich anzeigen lassen möchte. Er hat die Wahl, entweder alle, oder 
+    aber auch einzelne Sorten einzublenden und kann so differenzieren und weitere 
+    Rückschlüsse auf die Entstehung des Mülls ziehen.
+  </p>
+  <div class="w3-row-padding" style="margin: 0 5vw;">
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/V1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-image w3-round-large">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/10.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/9.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V1/0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-
-
-  <h3 class="w3-center" style="margin:126px 0 32px 0">WIREFRAMES – V2</h3>
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="../data/UI/XD/V2/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/statistiken/v1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-image w3-round-large">
     </div>
   </div>
 </div>
 
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Version 2</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Aufgrunddessen, dass unsere Toolbar in der ersten Version noch ziemlich voll wirkte, 
+    entschieden wir, diese ein wenig aufzulockern. Hierzu schauten wir uns in dieser nach 
+    Dopplungen und unnötigen Informationen um.<br/><br/>
+    So wurden beispielsweise die Schnellzugriffe bei der Datumsauswahl entfernt und die 
+    aufwändige Zeiteinstellung per Drop-Down-Menü, durch eine einfachere und schneller zu 
+    bedienende Zeitleiste ersetzt.<br/><br/>
+    Wir fügten außerdem die Option ein, im ausgewählten Zeitraum alle Daten anzeigen zu 
+    lassen, oder die beiden Daten miteinander zu vergleichen. Außerdem wanderte die Toolbar 
+    auf die linke Seite des Displays, da der User diese zuerst sehen soll, da er zuerst 
+    einen Zeitraum auswählen möchte, bevor er sich auf die Karte fokusiert.
+  </p>
+  <div class="w3-row-padding" style="margin: 0 5vw;">
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/V2.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/statistiken/2.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
 
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Color Exploration</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    In der nächsten Variante spielten wir mit verschiedenen Farben. <br/>
+    Auch die Überlegung, für jede Art von Müll eine eigene Farbe zu verwenden und die 
+    Toolbar dafür in einem neutralen weiß zu halten fand hier ihren Platz.<br/>
+    Da jedoch die vielen verschiedenen Farben zu sehr von der eigentlichen Aussage 
+    der Heatmap ablenken würden, und diese dann vom Nutzer nicht mehr korrekt interpretiert 
+    werden könnte (mehr dazu bei <a href="../mapbox/index.html">Mapbox</a>), entschieden 
+    wir uns schnell dagegen, für jede Art von Müll eine eigene Farbe zu verwenden. 
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 3vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/4.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/3.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/2.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+  <div class="w3-row-padding" style="margin: 0vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/5.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/8.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/6.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>   
+  </div>
+</div>
 
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Version 3</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Wir entschieden uns vorerst für die Farbe grün, da diese einen guten Kontrast zum 
+    grau der Karte hat und fügten rechts einen Screenshot von Mapbox ein, um besser 
+    abwägen zu können, ob die Toolbar in Kombination mit der Karte funktioniert, und 
+    auch, um besser entscheiden zu können, ob das grün, gemeinsam mit der Karte 
+    funktionieren würde.<br/><br/>
+    Schnell stellten wir fest, dass die weiße Seitenleiste der App und der helle 
+    Hintergrund der Karte miteinander kongurierten. Außerdem gingen wichtige 
+    Elemente durch die grüne Farbe beinahe in der Seitenleiste verloren, weshalb wir uns 
+    dafür entschieden, im weiteren Verlauf den Hintergrund des Menüs wieder farbig 
+    darzustellen.<br/><br/>
+    Außerdem versuchten wir, den Screen noch einmal von Grund auf zu betrachten. 
+    Hierzu entfernten wir die Hintergrundfarbe versuchsweise völlig und stellten alles 
+    in diversen Grautönen dar, um ein wireframeartiges Gebilde zu bekommen und die 
+    Strukturen noch einmal deutlicher zu sehen.
+  </p>
+  <div class="w3-row-padding" style="margin: 0 5vw;">
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/V3.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/statistiken/v3.1.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
 
+<div class="bgimg-11 w3-display-container" id="home"></div>
 
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Color Exploration II</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+   Nachdem wir uns auf die Farbe blau als Hintergrundfarbe geeinigt hatten, ging es nun darum, 
+   für die Karte eine Kontrastfarbe zu finden, sodass klar ersichtlich ist, dass es sich bei 
+   dieser um einen abgesonderten Teil im UI handelt.<br/><br/>
+   Wir entschieden uns auch dafür, die Zeitleiste nicht in das Menü selbst zu integrieren, 
+   sondern diese als eine Art schwebenden Zeitstrahl am unteren Kartenrand zu platzieren.<br/><br/>
+   Dies hat zur Folge, dass das Menü luftiger und übersichtlicher wird und man im Zeitstrahl 
+   genauer arbeiten kann, da dieser nun mehr Platz bekommen hat. Dennoch hat der Nutzer im 
+   Menü noch die Möglichkeit, per Schnellzugriff auf einige, häufig benötigte Tage zuzugreifen, 
+   ohne diesen erst aufwändig im Zeitstrahl einstellen zu müssen.<br/><br/>
+   Um mehr Übersichtlichkeit zu erreichen und dem User die Bedienung zu erleichtern, ersetzten 
+   wir außerdem die großen Icons, die die verschiedenen Müllsorten repräsentierten, durch einfachere, 
+   Checkboxes. So kann der Nutzer ganz einfach sehen, welche Sorten er gerade ausgewählt hat 
+   und welche ihm noch zur Verfügung stehen. 
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 3vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/II/0.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/II/0,1.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/II/1.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+  <div class="w3-row-padding" style="margin: 0vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/II/2.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/II/3.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/coloring/II/6.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>   
+  </div>
+</div>
 
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Mapbox Styles</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Passend zu unseren aktuellen Varianten des Interfaces, erarbeiteten wir 
+    diverse Mapbox-Styles, welche wir zuerst als Screenshot hinter unser UI 
+    legten und später in HTML einbunden.<br>
+    Aufgrunddessen, dass Framer X mittelrweile jedoch so viele Erweiterungen 
+    anbietet, die Mapbox live einbinden können, entschieden wir uns, unser 
+    HTML zu verwerfen und unseren Prototypen in Framer zu erstellen.
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 5vh 7vw;">
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/1.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/2.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/3.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div> 
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/4.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
 
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Version 5</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Anschließend erstellten wir eine weitere Variante, in der wir den Grauwert der 
+    Hintergrundfarbe weiter reduzierten, um einen besseren Kontrast zu den darauf 
+    platzierten Elementen zu erhalten. <br/></br/>
+    Außerdem setzten wir nun auf eine weitere Farbe, um die Aufmerksamkeit des 
+    Nutzers stärker auf die Karte zu lenken, weshalb wir das Menü komplett in blau, 
+    und die Karte in einem dazu passenden türkis hielten. So wird auch deutlicher 
+    ersichtlich, dass der Zeitstrahl zum Menü, und nicht zur Karte gehört.<br><br>
+    Gleichzeitig erstellten wir eine Variante mit (fast) grauem Hintergrund, die 
+    neutraler wirkt und durch ihre Helligkeit eine Art "light-mode" darstellen soll.<br/>
+    <br/>
+    
+  <div class="w3-row-padding" style="margin: 0 5vw;">
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/v7.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/statistiken/v4.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
+
+<div class="bgimg-12 w3-display-container" id="home"></div>
+
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Testing</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Durch unsere Tests mit reellen Personen stellten wir zu diesem Zeitpunkt im Projekt 
+    fest, dass es für die Person, die später einmal mit unserer Software arbeiten sollte, 
+    wichtig sein würde, Karte und Statistik, zumindest in Ansätzen, auf einen Blick zu haben.<br/>
+    Daher entschieden wir uns dafür, in der Zeitleiste eine abstrahierte Version der 
+    Statistik anzuzeigen. Dies gewährleisteten wir über einen kleinen Pfeil, der anzeigt, 
+    ob die Anteile an Müll für den angezeigten Ort, im gewählten Zeitraum gestiegen oder 
+    gesunken sind. Dies wird additiv durch eine prozentuale Anzeige ergänzt (hier "+ 0,05%"). 
+    So kann nicht nur auf einen Blick abgelesen werden, ob die Werte angestiegen oder 
+    gesunken sind, sondern auch, um wie viel Prozent. <br/>
+    Möchte der Nutzer noch weitere Informationen zum Thema erhalten, so kann er auf die 
+    Anzeige, oder alternativ links oben auf den Reiter "Statistik" klicken, um sich die 
+    ausführliche Statistik detailiert anzuschauen.
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 3vh 7vw;">
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/v5/karte.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m6">
+      <img src="../data/UI/XD/v5/stat.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
+
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Mapbox in HTML</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Platzhalter
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 5vh 7vw;">
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/5.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/6.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
+
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Mapbox in Framer X</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Platzhalter
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 5vh 7vw;">
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/5.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m3">
+      <img src="../data/UI/mapbox/6.jpg" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
+
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Darstellung der Zeitleiste</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Mit der globigen und starr wirkenden Darstellung unserer Zeitleiste unzufrieden, begannen 
+    wir mit dieser ein wenig weiter zu experimentieren. Beginnend mit diversen Arten von Balken, 
+    über verschiedene Farbverläufe, bis hin zu einem weichgezeichneten Hintergrund probierten 
+    wir so lange, bis wir mit unserem Ergebnis letztendlich zufrieden waren. <br><br>
+    Da später einmal auch die Mitarbeiter der Stadt vor größeren Bildschirmen sitzen würden, 
+    passten wir in diesem Schritt außerdem unser Interface an die größeren iMac-Bildschirme an, 
+    wodurch alles noch ein wenig luftiger wirkt und die Karte mehr Platz bekommt. 
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 3vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/zeitleiste/verlauf.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/zeitleiste/balken.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/zeitleiste/weich.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
+
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Version 6</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Der Gedanke, dass der Nutzer später einmal nur optimal arbeiten können würde, beschäftigte 
+    und in dieser Zeit sehr. Daher begannen wir, diese Info im Hinterkopf, unser Interface 
+    weiter zu bearbeiten. Hierzu spielten wir zuerst mit verschiedenen Versionen, wir der Nutzer 
+    zwischen Karte und Statistik hin und her wechseln kann. <br><br>
+    Später begannen wir, aufgrunddessen unser Interface noch einmal zu überdenken und erarbeiteten 
+    daraus resultierend noch einige weitere Varianten, in der, sowohl die Statistiken, als auch 
+    die Karte auf einem Screen zu sehen sind. Hierbei ist der Teil der Statistik optional ein- 
+    oder ausklappbar, je nach dem, was der Nutzer gerade bearbeiten möchte und sehen muss.
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 3vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/switch/1.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/switch/3.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/switch/2.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+  </div>
+</div>
+
+<div class="w3-container" style="padding:64px 16px 96px 16px" id="work">
+  <h3 class="w3-center">Version 7</h3>
+  <p  style="margin: 0 25vw 64px 25vw;">
+    Platzhalter
+  </p>
+  <div class="w3-row-padding" style="margin: 0 7vw 3vh 7vw;">
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/v6/1.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/v6/2.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>  
+    <div class="w3-col m4">
+      <img src="../data/UI/XD/v6/3.png" style="width:100%" onclick="onClick(this)" class=" w3-center w3-hover-opacity w3-image w3-round-large">
+    </div>   
+  </div>
+</div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
