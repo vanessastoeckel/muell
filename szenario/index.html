@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>User Experience Design 2 - SZENARIO WORKSHOP</title>
+<title>User Experience Design 2 - Szenario Workshop</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <link rel="stylesheet" href="../style.css">
-<link href="https://fonts.googleapis.com/css?family=Heebo:100,300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,600&display=swap" rel="stylesheet">
 <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,9 +14,10 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="../index.html" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><b>IOTrash</b></a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
+      <a href="../Exposee/index.html" class="w3-bar-item w3-button"><i class="fa fa-file-text"></i> EXPOSÉ</a>
       <a href="../sprint/index.html" class="w3-bar-item w3-button"><i class="fa fa-rocket"></i> SPRINT</a>
       <a href="../cb/index.html" class="w3-bar-item w3-button"><i class="fa fa-tasks"></i> CONCEPT BUILDING</a>
       <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> DIE WELT ALS DESIGN</a>
@@ -37,6 +38,7 @@
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../Exposee/index.html" onclick="w3_close()" class="w3-bar-item w3-button">EXPOSÉ</a>
   <a href="../sprint/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DESIGN SPRINT</a>
   <a href="../cb/index.html" onclick="w3_close()" class="w3-bar-item w3-button">CONCEPT BUILDING</a>
   <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
@@ -51,7 +53,7 @@
 <header class="bgimg-9 w3-display-container" id="home"></header>
 
 
-<div class="w3-container" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container" style="padding:64px 16px" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Parameter sammeln</h3>
@@ -70,12 +72,12 @@
       </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Parameter.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Parameter.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="max-height: 100vh;">
     </div>
   </div>
 </div>
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Parameter clustern</h3>
@@ -91,12 +93,12 @@
       </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Parameter_sortiert.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Parameter_sortiert.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="max-height: 100vh;">
     </div>
   </div>
 </div>
 
-<div class="w3-container" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container" style="padding:64px 16px" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Ausprägungen</h3>
@@ -111,12 +113,12 @@
       </p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Bildschirmfoto 2019-04-17 um 14.34.39.png" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Bildschirmfoto 2019-04-17 um 14.34.39.png" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="max-height: 100vh;">
     </div>
   </div>
 </div>
 
-<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Konstruktionsarbeit</h3>
@@ -175,12 +177,12 @@
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Konstruktion.jpg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 2.5vh; max-height: 100vh;">
-      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Koordinatensystem001.jpeg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="margin-bottom: 10vh; max-height: 100vh;">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/szenario/Koordinatensystem001.jpeg" onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394" style="max-height: 100vh;">
     </div>
   </div>
 </div>
 
-<div class="w3-container" style="padding:128px 16px;" id="empathy map">
+<div class="w3-container" style="padding:64px 16px" id="empathy map">
   <div class="w3-row-padding">
     <div class="w3-col m6">
       <h3>Konzeption</h3>

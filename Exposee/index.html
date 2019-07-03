@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<title>User Experience Design 2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,600&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="../index.html" class="w3-bar-item w3-button w3-wide"><b>IOTrash</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="../Exposee/index.html" class="w3-bar-item w3-button"><i class="fa fa-file-text"></i><b> EXPOSÉ</b></a>
+      <a href="../sprint/index.html" class="w3-bar-item w3-button"><i class="fa fa-rocket"></i> SPRINT</a>
+      <a href="../cb/index.html" class="w3-bar-item w3-button"><i class="fa fa-tasks"></i> CONCEPT BUILDING</a>
+      <a href="../dwad/index.html" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> DIE WELT ALS DESIGN</a>
+      <a href="../szenario/index.html" class="w3-bar-item w3-button"><i class="fas fa-route"></i> SZENARIO</a>
+      <a href="../ML/index.html" class="w3-bar-item w3-button"><i class="fas fa-robot"></i> MACHINE LEARNING</a>
+      <a href="../UI/index.html" class="w3-bar-item w3-button"><i class="	fas fa-desktop"></i> INTERFACE</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="../Exposee/index.html" onclick="w3_close()" class="w3-bar-item w3-button">EXPOSÉ</a>
+  <a href="../sprint/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SPRINT</a>
+  <a href="../cb/index.html" onclick="w3_close()" class="w3-bar-item w3-button">CONCEPT BUILDING</a>
+  <a href="../dwad/index.html" onclick="w3_close()" class="w3-bar-item w3-button">DIE WELT ALS DESIGN</a>
+  <a href="../szenario/index.html" onclick="w3_close()" class="w3-bar-item w3-button">SZENARIO</a>
+  <!-- <a href="ML/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MACHINE LEARNING</a> -->
+  <a href="../mapbox/index.html" onclick="w3_close()" class="w3-bar-item w3-button">MAPBOX</a>
+  <a href="../UI/index.html" onclick="w3_close()" class="w3-bar-item w3-button">INTERFACE</a>
+  <!-- <a href="testing/index.html" onclick="w3_close()" class="w3-bar-item w3-button">TESTING</a> -->
+</nav>
+
+<header class="bgimg-1 w3-display-container" id="home"></header>
+
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">EINLEITUNG</h3>
+  <!-- <p class="w3-center"><em>I love photography</em></p> -->
+  <p>
+    In diesem Semester starteten wir mit drei Themen, welche wir in der ersten Woche des Semesters in einem Themenpitch vorstellten. 
+    Von diesen drei Themen wurde eines gewählt, welches wir anschließend, das restliche Semester über ausarbeiteten. 
+    <br/>
+    Nach einigem Brainstorming einigten wir uns auf drei Themen, die wir beim Pitch vorstellen wollten. 
+    Unsere Themen sollten die Umweltverschmutzung in Städten, Tinker Bricks und die Haltung am Arbeitsplatz sein. 
+    <br/>
+    Diese Themen sind unten genauer beleuchtet, um unsere Recherchen zu verbildlichen.
+  </p>
+</div>
+
+<div class="bgimg-2 w3-display-container" id="müll"></div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">UMWELTVERSCHMUTZUNG IN STÄDTEN</h3>
+  <div class="w3-col m12 w3-right" style="float: left">
+    <!-- <img src="../data/sprint/eimer.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin: 2.5vh 2vw 1vh -3vw; max-width: 20vw" onclick="onClick(this)" alt="Mülleimer"> -->
+    <!-- <p class="w3-center"><em>I love photography</em></p> -->
+    <p>
+      <b>Unsere Motivation</b><br/>
+      Die Vermüllung der Umwelt im Allgemeinen ist ein großes
+      Problem für die Zukunft. Nicht nur in den Meeren, schon in
+      den Städten können wir die Verschmutzung unseres Umfelds
+      beobachten. Viele Mitbürger scheint dies nicht zu berühren.
+      In unserem Projekt wollen wir einen Lösungsansatz für dieses
+      Problem finden, in dem wir Menschen durch Visualisierungen
+      aufklären und durch ansprechende Medien zu mehr Umweltbewusstsein
+      anregen.<br/><br/>
+      <b>Vorgehen</b><br/>
+      Das Befassen mit dem Problem Umwelt stellt den Fragesteller
+      vor mehrere Fragen, z.B.: Woher kommt das Desinteresse und
+      Unwissen der Bürger? In welchem Zusammenhang steht der
+      „Essen-To-Go“ - Trend zu diesem Thema?<br/>
+      In diesem Fall sind konkrete Fragestellungen und Befragung
+      der Stakeholder der erste Ansatz des Problems. Die Gedanken
+      der Bürger und die Sorgen von Stadtarbeitern können wichtige
+      Aufschlüsse hierfür geben.<br/>
+      Eine Lösung des Problems kann schließlich zum einen eine Hilfestellung
+      von Arbeitern, ein Umdenken der Bürger oder sogar
+      ein Verpackungskonzept sein. Großes Potenzial hat das Thema
+      Umwelt auch deshalb, weil man schnell testbare Prototypen
+      erstellen kann (Plakate, Kennzeichnungen, digitale Aufrufe,
+      evtl. Sensorik an Mülleimern, Tracking von Müllstellen).
+      <br/><br/><b>Relevanz</b><br/>
+      Das Thema Umwelt ist sicherlich im gestalterischen eines der
+      am meisten relevantesten. Während die Industrie an komplizierten
+      Verfahren arbeitet, um die Umwelt zu schonen, könnte
+      bereits jede einzelne Privatperson dazu beitragen, die Umwelt
+      zu schützen. Richtig eingesetztes Design kann einen sinnvollen
+      Beitrag hierzu leisten.<br/>
+      Von visuell ansprechenden Plakaten, Apps mit Belohnungssystemen
+      oder der Datensammlung über Sensorik kann Gestaltung
+      hier genutzt werden. Wichtig ist, dass Endnutzer nicht
+      das Gefühlt haben, Vorschriften zu bekommen oder erzogen zu
+      werden.<br/><br/>
+      <b>Themenbereich</b><br/>
+      Zum Themenbereich Umwelt gibt es im Allgemeinen bereits
+      viele bearbeitete Themen. Unser Ansatz soll, durch das sorgfältige
+      Erforschen von Ursachen für Vermüllung jedoch eine
+      durchführbare Verbesserung der Sauberkeit möglich machen.
+      Durch unser Wissen im Bereich IoT, Technologien sowie Nutzerforschung
+      kann hier eine Innovation entstehen, die tatsächlich
+      durchführbar und hilfreich ist.<br/><br/>
+      <b>Mögliche Partner</b><br/>
+      Ein potenzieller Interessent des Projekts wäre sicherlich die
+      Stadt Schwäbisch Gmünd (oder jede andere Stadt), vor allem in
+      der Zeit der Remstal Gartenschau zu deren Organisation auch
+      bereits Kontakte bestehen. Im kleineren Sinne ist es für jede
+      Stadt bzgl. des Ansehens sinnvoll, sauber zu erscheinen. Auch
+      für die Bürger führt dies zu mehr Zufriedenheit. Im größeren
+      Sinne trägt die Vermeidung von Müll nachhaltig dazu bei, dass
+      Nanopartikel von Verpackungen nicht in den Boden eindringen
+      und ihn auf lange Hinsicht schädigen.<br/>
+      Interessant ist in diesem Fall, herauszufinden, wie eine Anwendung
+      oder Information gestaltet werden muss, um auch
+      kritische oder desinteressierte Nutzer zu erreichen. In diesem
+      Zusammenhang muss auch ein Mehrwert für potenzielle Interessenten
+      des Projekts ersichtlich werden.<br/><br/>
+      <b>Realisierung</b><br/>
+      Eine Zusammenarbeit wäre mit Stadtarbeitern oder Forschern
+      für Bodengesundheit möglich und sinnvoll. Ergänzende Teilbereiche
+      wären die Untersuchung der Auswirkung von Plastikzerfall
+      auf der Erde. Planmäßg ist das Endergebnis ein greifbarer
+      Hardware- oder Softwareprototyp.
+    </p>
+  </div>
+</div>
+
+<div class="bgimg-3 w3-display-container" id="tinker bricks"></div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">TINKER BRICKS</h3>
+  <div class="w3-col m12 w3-right" style="float: left;">
+    <!-- <img src="../data/sprint/tb.jpeg" class="w3-round w3-image w3-hover-opacity w3-left" width="400" height="400" style="margin: 2.5vh 2vw 1vh -3vw; max-width: 20vw" onclick="onClick(this)" alt="Mülleimer"> -->
+    <p>
+      <b>Motivation</b><br/>
+      Tinker Bricks ist ein Projekt, mit dem wir uns bereits im dritten
+      Semester beschäftigt haben. Hierbei geht es darum, Kindern
+      bereits in jungem Alter ein Gefühl für Technik zu vermitteln.
+      Da es in der heutigen Zeit immer weniger Jobs gibt, bei denen
+      Heranwachsende ohne technische Grundkenntnisse bestehen
+      können, möchten wir uns noch ein Semester damit beschäftigen,
+      wie wir Kindern diese Kenntnisse spielerisch, bereits in
+      jungen Jahren vermitteln können.<br/><br/>
+      <b>Lösungsansatz</b><br/>
+      Unser Ziel ist es, Kindern durch die kommunizierenden Bausteine
+      mehr Spielspaß und pädagogische Erziehung zu bieten.
+      Durch die eigenverantwortliche Arbeit vom Aufbau bis hin zum
+      spielerischen Lernen am Projekt erkennen die Kinder erste
+      Zusammenhänge zwischen ihren Handlungen und den vom
+      Spielzeug ausgeführten Aktionen.<br/>
+      Hierdurch soll die Kreativität gefördert werden und erste Erfahrungen
+      mit dem Thema Technik können gesammelt werden.<br/>
+      Diese soll den Kindern in ihrem weiteren Leben den Umgang
+      mit Technik erleichtern und anfängliche Hürden im Zusammenhang
+      mit Programmiersprachen nehmen.<br/>
+      Tinker Bricks besteht aus zwei Komponenten: einer Art „Fernbedienung“
+      und einer individuell gestaltbaren Figur. Die Figur
+      besteht aus verschiedenen Bausteinen, welche jeweils unterschiedliche
+      Aktionen ausführen können.<br/>
+      Das Kind kann durch die „Fernbedienung“ selbst bestimmen,
+      welche Aktionen wann und in welcher Reihenfolge von der
+      Figur ausgeführt werden sollen, diese sozusagen „programmieren“.
+      Dies wird erreicht, indem spezielle Duplo-Steine auf
+      eine Platte aufgesteckt werden, welche als Fernbedienung für
+      die in der Figur verbauten Motoren, LEDs und diversen anderen
+      Aktoren fungiert.<br/>
+      Bei der „Fernbedienung“ bzw. dem UI legten wir großen Wert
+      darauf, dass diese analog und nicht digital ist, wie bei den
+      meisten Produkten mit ähnlichen Zielen.<br/><br/>
+      <b>Marktrecherche</b><br/>
+      Bei unserer Recherche fanden wir viele Produkte, die Kindern
+      Spielzeugroboter bieten. Diese hatten jedoch alle gemeinsam,
+      dass sie per Tablet/Smartphone gesteuert wurden, wovon wir
+      uns bewusst distanzieren wollen. Wir möchten den Kindern
+      bei der Steuerung die selbe Haptik bieten, die sie auch beim
+      Zusammenbauen ihres „Roboters“ haben.<br/>
+      Außerdem unterscheidet sich unsere Idee von den bestehenden
+      Produkte darin, dass unsere steuerbare Einheit sich modular,
+      in allen erdenklichen Varianten zusammenbauen lässt,
+      während bestehende Produkte stark in ihrer Vielfalt eingeschränkt
+      sind. Oft sind bei diesen nur 2-3 verschiedene Varianten
+      möglich, da die Steine nur in einer bestimmten Reihenfolge
+      aufeinander passen, da beispielsweise ein Batteriestein und
+      weitere notwendige Elemente verbaut werden müssen.<br/>
+      Äquivalent zu unseren leuchtenden Steinen fanden wir die Steine
+      von Light Stax, welche, verbunden mit einer Grundplatte in
+      welche die Batterie verbaut ist, leuchten können solange kein
+      „falscher“ Stein zwischen die Light Stax gesteckt wurde.
+      Diese Punkte wollen wir in unserem Projekt aufgreifen und
+      verbessern. Bei unserem Projekt sollen die Bausteine auf der
+      Unter- und der Oberseite Kontakte haben, wodurch die Steine
+      ganz nach der Fantasie der Kinder gesteckt werden können,
+      ohne dass der Stromkreis unterbrochen wird. Dies verleiht den
+      Kindern mehr Variationsmöglichkeiten, wodurch die eigene
+      Kreativität wieder vermehrt angeregt werden soll.<br/><br/>
+      <b>Zielgruppe</b><br/>
+      Unser Ziel ist es, Kindern im Alter von 7-10 Jahren den Zugang
+      zur Technik zu gewährleisten und ihnen diese spielerisch näher
+      zu bringen. Einen weiteren Mehrwert unseres Projektes sehen
+      wir darin, dass Kinder, jeglichen Geschlechtes früh mit Technik
+      in Kontakt gelangen, das Interesse für Technik und so mögliche
+      Vorurteile („Männerjobs“ etc.) gar nicht erst entstehen können.
+      <br/><br/><b>Ausblick</b><br/>
+      Wir wollen im kommenden Semester unser bestehendes Projekt
+      umbauen, sodass markeneigene Steine der Firma Dusyma
+      verwendet werden, anstatt wie bisher Steine von LEGO.
+      Außerdem wollen wir Funktionen einbauen, wie beispielsweise
+      die Möglichkeit, die Steine individuell zusammenzustecken
+      oder auf der Steuerungsplatte zu stapeln, sodass mehrere
+      Aktionen gleichzeitig ausgeführt werden können.<br/>
+      Insgesamt soll das bisherige Nutzererlebnis mit dem Spiel- und
+      Lernprodukt gesteigert werden. Die Kinder sollen mit so wenig
+      technischen Barrieren am Produkt wie möglich, in die Welt der
+      Technik und das Entdecken dieser, einsteigen und sich weiter
+      entwickeln können. Ein Beispiel für eine dieser Barrieren wäre
+      das Löten, welches zwar auch eine wichtige grundlegende
+      Fähigkeit auf dem Gebiet darstellt, jedoch bei der bisherigen
+      Umsetzung mit ca. 100 Lötstellen für ungeduldige Kinderhände
+      nicht geeignet ist. Dies soll durch eine einfachere Lösung
+      ersetzt werden. Alternativ könnte am bestehenden Projekt,
+      unabhängig von der Kooperation gearbeitet werden und dieses
+      zum Beispiel um eine interaktive Bauanleitung ergänzt werden.
+    </p>
+  </div>  
+</div>
+
+<div class="bgimg-4 w3-display-container" id="home"></div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="Präsentation">
+  <h3 class="w3-center">FAZIT</h3>
+  <div class="w3-col m12 w3-right" style="float: left">
+    <p>
+      In unserer ersten Vorlesung stellte jedes Team ihre 2-3 Themen vor. Anschließend durfte jeder 
+      Anwesende eine Stimme für jeweils ein Thema abgeben. <br/>
+      In unserem Fall stimmte die Mehrzahl der Anwesenden Studenten für das Haltungsthema.
+      So hatten wir nach unserem Pitch festgelegt, welches Thema wir für den Rest des Semesters 
+      bearbeiten würden. <br/>
+      Als nächsten Schritt wollten wir uns nun eine 
+      Display Matrix anlegen, in der wir die Vor- 
+      und Nachteile verschiedener Displayarten veranschaulichen wollten. Dies hilft uns dabei, 
+      herauszuarbeiten, welche Art von Display für unser Projekt am geeignetsten ist.  
+    </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32" style="padding-bottom: 0; margin-bottom: 0">
+  <div class="w3-xlarge w3-section">
+      <p style="font-size: 0.8em; font-weight: 100">Check out our portfolios!</p>
+      <a href="http://marinarost.de/" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Marina.jpeg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+      <a href="https://janaseemann.de" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Jana.jpg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+      <a href="https://vanessastoeckel.de/" class="img" target="_blank" style="text-decoration: none">
+        <img src="../data/contact/Vanessa.jpg" class="w3-round w3-image w3-hover-opacity" width="40" height="333">
+      </a>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+

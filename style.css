@@ -232,7 +232,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Heebo", "Helvetica Neue" sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: 'IBM Plex Sans', sans-serif;}
 
 body, html {
   height: 100%;
@@ -241,6 +241,7 @@ body, html {
 
 p {
     margin: 5vh 15vw 0 15vw;
+    font-weight: 100;
 }
 
 b{
@@ -248,11 +249,19 @@ b{
 }
 
 /* Full height image header */
+.bgimg-0 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("data/stockf.png");
+  min-height: 100%;
+  /* margin-bottom: 64px; */
+}
 .bgimg-1 {
   background-position: center;
   background-size: cover;
   background-image: url("data/eimer.jpg");
-  min-height: 100%;
+  min-height: 60vh;
+  /* margin-bottom: 64px; */
 }
 .bgimg-2 {
 background-position: center;
@@ -260,6 +269,7 @@ background-size: cover;
 background-image: url("data/vorbereitung/muell.jpg");
 min-height: 40vh;
 background-attachment: fixed;
+/* margin-bottom: 64px; */
 }
 .bgimg-3 {
 background-position: center;
@@ -268,6 +278,7 @@ background-image: url("data/vorbereitung/Sequencer.jpg");
 min-height: 40vh;
 background-attachment: fixed;
 background-position-y: 8vh;
+/* margin-bottom: 64px; */
 }
 .bgimg-4 {
 background-position: center;
@@ -275,6 +286,7 @@ background-size: cover;
 background-image: url("data/vorbereitung/praesentation.jpg");
 min-height: 40vh;
 background-attachment: fixed;
+/* margin-bottom: 64px; */
 }
 .bgimg-5 {
 background-position: center;
@@ -283,6 +295,7 @@ background-image: url("data/sprint/research.jpg");
 min-height: 60vh;
 background-attachment: fixed;
 background-position-y: -34vh;
+/* margin-bottom: 64px; */
 }
 .bgimg-6 {
 background-size: cover;
@@ -291,12 +304,14 @@ min-height: 60vh;
 background-attachment: fixed;
 background-position-y: -25vh;
 background-position-x: 4.5vw;
+/* margin-bottom: 64px; */
 }
 .bgimg-7 {
 background-position: center;
 background-size: cover;
 background-image: url("data/cb/banner.jpg");
 min-height: 60vh;
+/* margin-bottom: 64px; */
 }
 .bgimg-8 {
 background-position: center;
@@ -304,6 +319,7 @@ background-size: cover;
 background-image: url("data/sprint/empathy.jpg");
 min-height: 40vh;
 background-attachment: fixed;
+/* margin-bottom: 64px; */
 }
 
 .bgimg-9 {
@@ -312,14 +328,16 @@ background-attachment: fixed;
   background-image: url("data/szenario/titel.jpg");
   min-height: 60vh;
   background-attachment: fixed;
+  /* margin-bottom: 64px; */
 }
 
 .bgimg-10 {
   background-position: center;
   background-size: cover;
-  background-image: url("data/UI/xd.jpg");
+  background-image: url("data/UI/xd4.png");
   min-height: 60vh;
   background-attachment: fixed;
+  /* margin-bottom: 64px; */
 }
 
 .bgimg-11 {
@@ -328,6 +346,7 @@ background-attachment: fixed;
   background-image: url("data/UI/XD/coloring/II/all.png");
   min-height: 40vh;
   background-attachment: fixed;
+  /* margin-bottom: 64px; */
 }
 
 .bgimg-12 {
@@ -336,6 +355,24 @@ background-attachment: fixed;
   background-image: url("data/UI/XD/test2.jpg");
   min-height: 40vh;
   background-attachment: fixed;
+  /* margin-bottom: 64px;   */
+}
+
+.bgimg-13 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("data/ML/Zange.jpg");
+  min-height: 60vh;
+  background-attachment: fixed;
+  /* margin-bottom: 64px;   */
+}
+.bgimg-14{
+  background-position: center;
+  background-size: cover;
+  background-image: url("data/UI/framer/1.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  /* margin-bottom: 64px;   */
 }
 
 
@@ -343,3 +380,12 @@ background-attachment: fixed;
   padding: 16px;
 }
 
+.passive {
+  color: #232E37;
+}
+
+.active {
+  color: #2E699A;
+  /* text-decoration: underline; */
+  /* border-bottom: 20px solid currentColor; */
+}
