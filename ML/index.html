@@ -94,30 +94,38 @@
   </div>
 </div>
 
-<div class="w3-container" style="padding:64px 16px;" id="empathy map">
+<div class="w3-container" style="padding:64px 16px" id="work">
+  <h3 class="w3-center">mobileNet</h3>
+  <p style="margin: 0 25vw 10vh 25vw;">
+    Im Fach "Machine Learning" ging es im zweiten Projekt darum, verschiedene Machine Learning 
+    Projekte, zum Beispiel Bilderkennung auszuprobieren. Wir entschieden uns daher dafür,
+      beide Fächer miteinander zu 
+    kominieren und mit Hilfe des Inputs des Unterrichtes unseren Hardware-Prototypen 
+    für das Fach "User Experience II" zu bauen.<br><br>
+    Schnell waren wir an einem Punkt, an dem die Website erkennen konnte, welches Objekt wir 
+    vor die Kamera hielten. Nun mussten, für den nächsten Schritt, die trainierten 
+    Daten nur noch gespeichert und wieder abgerufen werden können.<br><br>
+    Anschließend sollte eine externe Kamera (Webcam) die Bilder aufnehmen und an 
+    den Laptop schicken können. Wenn dies klappte, so unser Ziel, sollten die 
+    aufgenommenen Daten, gemeinsam mit in diesem Moment gemessenen Koordinaten in 
+    eine geojson-Datei gespeichert und live in Mapbox angezeigt werden.
+  </p>
   <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>MACHINE LEARNING MIT STEFFEN</h3>
-      <p style="margin: 0 8vw 0 0;">
-        Im Fach "Machine Learning" ging es im zweiten Projekt darum, verschiedene Machine Learning 
-        Projekte, zum Beispiel Bilderkennung auszuprobieren. Wir entschieden uns daher dafür,
-         beide Fächer miteinander zu 
-        kominieren und mit Hilfe des Inputs des Unterrichtes unseren Hardware-Prototypen 
-        für das Fach "User Experience II" zu bauen.<br><br>
-        Schnell waren wir an einem Punkt, an dem die Website erkennen konnte, welches Objekt wir 
-        vor die Kamera hielten. Nun mussten, für den nächsten Schritt, die trainierten 
-        Daten nur noch gespeichert und wieder abgerufen werden können.<br><br>
-        Anschließend sollte eine externe Kamera (Webcam) die Bilder aufnehmen und an 
-        den Laptop schicken können. Wenn dies klappte, so unser Ziel, sollten die 
-        aufgenommenen Daten, gemeinsam mit in diesem Moment gemessenen Koordinaten in 
-        eine geojson-Datei gespeichert und live in Mapbox angezeigt werden.
-      </p>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/Konzept.jpg" onclick="onClick(this)" height="394">
     </div>
-    <div class="w3-col m6">
-      <video class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/steffen1.mp4" controls onclick="onClick(this)" alt="Stakeholder Map" width="700" height="394">
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/kamzange.jpg" onclick="onClick(this)" height="394">
     </div>
-  </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/Zange.jpg" onclick="onClick(this)" height="394">
+    </div>
+    <div class="w3-col m3">
+      <video class="w3-image w3-round-large w3-hover-opacity" src="../data/ML/steffen1.mp4" controls width="700" height="394">
+    </div>
+  </div>  
 </div>
+
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
